@@ -9,12 +9,12 @@ test("adds 1 + 2 to equal 3", () => {
 });
 
 test("adds true + false to be invalid", () => {
-    expect(sum(true, false)).toBe("Value must be a number");
-  });
-  
-  test("adds NaN + false to invalid input ", () => {
-    expect(sum(NaN, false)).toBe("Value must be a number");
-  });
+  expect(sum(true, false)).toBe("Value must be a number");
+});
+
+test("adds NaN + false to invalid input ", () => {
+  expect(sum(NaN, false)).toBe("Value must be a number");
+});
 
 test("adds 2 + 2 to equal 4", () => {
   expect(sum(2, 2)).toBe(4);
