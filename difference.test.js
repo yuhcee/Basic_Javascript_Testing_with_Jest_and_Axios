@@ -40,18 +40,19 @@ test("should be wrong value if a single string is passed", () => {
   expect(difference("")).toBe("Value must be a number");
 });
 
+test("should NOT concatenate string with numbers", () => {
+  expect(difference("tz", 3)).toBe("Value must be a number");
+});
+
 test("should NOT be empty string", () => {
   expect(difference("", "")).toBe("Value must be a number");
 });
 
-test("should NOT concatenate string with numbers", () => {
-  expect(difference("tz", 3)).toBe("Value must be a number");
+test("should NOT minus strings", () => {
+  expect(difference("a", "b")).toBe("Value must be a number");
 });
 
 test("should add only type of numbers", () => {
   expect(difference(0, "tz")).toBe("Value must be a number");
 });
 
-test("should NOT minus strings", () => {
-  expect(difference("a", "b")).toBe("Value must be a number");
-});
