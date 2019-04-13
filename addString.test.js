@@ -5,23 +5,23 @@ test("AddString function exists", () => {
 });
 
 test("adds 1 + 2 to equal value must be a String", () => {
-  expect(addString(1, 2)).toBe('Value must be a String');
+  expect(addString(1, 2)).toBe("Value must be a String");
 });
 
 test("adds true + false to be invalid", () => {
-    expect(addString(true, false)).toBe("Value must be a String");
-  });
-  
-  test("adds NaN + false to invalid input ", () => {
-    expect(addString(NaN, false)).toBe("Value must be a String");
-  });
+  expect(addString(true, false)).toBe("Value must be a String");
+});
+
+test("adds NaN + false to invalid input ", () => {
+  expect(addString(NaN, false)).toBe("Value must be a String");
+});
 
 test("adds 2 + 2 to be Value must be a String", () => {
-  expect(addString(2, 2)).toBe('Value must be a String');
+  expect(addString(2, 2)).toBe("Value must be a String");
 });
 
 test("should output Value must be a String", () => {
-  expect(addString(0, 0)).toBe('Value must be a String');
+  expect(addString(0, 0)).toBe("Value must be a String");
 });
 
 test("should NOT be False", () => {
@@ -61,7 +61,5 @@ test("should return a valid output", () => {
 });
 
 test("should NOT add floating numbers", () => {
-  expect(addString(0.1, 0.2)).toBe('Value must be a String');
+  expect(addString(0.1, 0.2)).toBe("Value must be a String");
 });
-
-
