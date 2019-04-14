@@ -1,0 +1,29 @@
+{
+  "name": "basic_javascript_testing_with_jest_and_axios",
+  "version": "1.0.0",
+  "description": "Basic Javascript Functions Tests and Github Api Call Testing and Mocks with Jest and Axois.",
+  "main": "sum.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/handsum-MUSE/Basic_Javascript_Testing_with_Jest_and_Axios.git"
+  },
+  "keywords": [
+    "Javascript",
+    "Axios",
+    "Jest",
+    "js"
+  ],
+  "author": "Egbo Uchenna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/handsum-MUSE/Basic_Javascript_Testing_with_Jest_and_Axios/issues"
+  },
+  "homepage": "https://github.com/handsum-MUSE/Basic_Javascript_Testing_with_Jest_and_Axios#readme",
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "jest": "^24.7.1"
+  }
+}
