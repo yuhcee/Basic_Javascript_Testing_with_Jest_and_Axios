@@ -6,7 +6,7 @@ test("Githubfinder to be defined", () => {
 
 test("Expect User fetched login to be handsum-MUSE", () => {
   return githubfinder("handsum-MUSE").then(data => {
-    expect(data[0].owner['login']).toEqual("handsum-MUSE");
+    expect(data[0].owner["login"]).toEqual("handsum-MUSE");
   });
 });
 
@@ -26,13 +26,11 @@ test("User fetched repo name to be Egbo_Uchenna_Portfolio-", () => {
   });
 });
 
-
 test("Repo Egbo_Uchenna_Portfolio- owner_id to be 42383018", () => {
   return githubfinder("handsum-MUSE").then(data => {
-    expect(data[0].owner['id']).toEqual(42383018);
+    expect(data[0].owner["id"]).toEqual(42383018);
   });
 });
-
 
 test("Repo handsum-MUSE/jest_testing-exercises description and fork to be false", () => {
   return githubfinder("handsum-MUSE").then(data => {
@@ -44,12 +42,11 @@ test("Repo Owner ids to be lessThan or equal to 5", () => {
   let res = [];
   return githubfinder("handsum-MUSE").then(data => {
     for (let i in data) {
-      res.push(data[i].owner['id']);
+      res.push(data[i].owner["id"]);
     }
     expect(res.length).toBeLessThanOrEqual(5);
   });
 });
-
 
 test("All fetched repos to be greater than 3", () => {
   let resul = [];
@@ -60,5 +57,3 @@ test("All fetched repos to be greater than 3", () => {
     expect(resul.length).toBeGreaterThan(3);
   });
 });
-
-
